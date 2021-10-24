@@ -16,8 +16,7 @@ public class Mylink {
 		   queue.enqueue(first);
 		   queue.enqueue(second);
 		   queue.enqueue(third);
-		   
-		   queue.dequeue();
+		  // Print The Node
 		   queue.print();
 		 
 	 }
