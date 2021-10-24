@@ -4,71 +4,68 @@ package sample2;
      Node head;
      Node tail;
 	
-    public Mylinkedlist()
-    {
+     public Mylinkedlist()
+        {
 	    this.head = null;
-		this.tail=null;
+	    this.tail=null;
 	}
     
-    public void add(Node newNode)
-    {
+      public void add(Node newNode)
+        {
 		 if(head==null && tail==null) 
 		 {
 			head=newNode;
 			tail=newNode;
-			
-	     }
-	  else {
-	    	Node temp = head;
-	    	head=newNode;
-	    	head.next=temp;
+		  }
+                else {
+	    		Node temp = head;
+	    		head=newNode;
+	   	 	head.next=temp;
 	    	 
-	     } 
-    }
+	  	     } 
+        }
    
      
-     public void append(Node newNode) 
-     {
-    	 if(head==null && tail==null) 
-    	 {
-			   head=newNode;
-			   tail=newNode;
+      public void append(Node newNode) 
+        {
+    	         if(head==null && tail==null) 
+    		 {
+			head=newNode;
+		        tail=newNode;
 			   
 		 }
 	    
-	     else
-	     {
+	    	 else
+	    	 {
 	    	
-	    	 Node temp=newNode;
-	    	 tail.next=newNode;
-	    	 tail=temp;
-	    }
-    }
+	    	       Node temp=newNode;
+	    	       tail.next=newNode;
+	    	       tail=temp;
+	         }
+        }
     
      public void dequeue()
-     {
- 		Node node=	head;
+        {
+ 		Node node=head;
  		head=node.next;
  		
- 	 }
+        }
      
      public void pop()
-     {
- 		Node node=	head;
+         {
+ 		Node node=head;
  		head=node.next;
  		
  	 }
      
      public int peak() 
-     {
- 		
- 		return head.data;
- 		
+         {
+ 	   return head.data;
  	 }
     
      public void print()
       {
-    	Node node=head;
+    	        Node node=head;
 		while(node.next!=null)
 		{
 			System.out.println(node.data);
@@ -76,7 +73,7 @@ package sample2;
 		}
 		 System.out.println(node.data);
 			
-	  }
+      }
 	
 
  }
